@@ -1,0 +1,183 @@
+/* GLOBAL */
+:root {
+    /* COLORS */
+    --red: #ef476f;
+    --yellow: #ffd166;
+    --blue: #118ab2;
+    --black: #22223b;
+    --green: #06d6a0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--black);
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* END GLOBAL */
+/* ALERT */
+.alert {
+    padding: 20px;
+    background-color: var(--green);
+    color: white;
+    position: fixed;
+    border-radius: 4px;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    -webkit-transition: all 1.6s ease-in-out;
+    -moz-transition: all 1.6s ease-in-out;
+    -ms-transition: all 1.6s ease-in-out;
+    -o-transition: all 1.6s ease-in-out;
+    transition: all 1.6s ease-in-out;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* END ALERT */
+/* DECODE */
+.decodeData {
+    background-color: var(--blue);
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+    font-weight: 500;
+}
+
+.decodeData button {
+    background-color: var(--blue);
+    padding: 24px;
+    width: 100%;
+    border: none;
+    margin-bottom: 1em;
+    color: white;
+}
+
+/* END DECODE */
+/* HEADER */
+.header h1 {
+    margin-bottom: .4em;
+}
+
+/* END HEADER */
+/* CONTAINER */
+.header,
+.addForm,
+.search,
+.table{
+    padding: 2em;
+}
+
+/* END CONTAINER */
+/* ADD FORM */
+.addForm li {
+    margin: .4em 0;
+}
+
+.addForm button,
+.table button {
+    border: none;
+    padding: 8px 20px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+}
+
+/* END ADD FORM */
+/* TABLE */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--blue);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+button.tdBtn {
+    background-color: transparent;
+    color: var(--black);
+    font-size: inherit;
+    font-weight: 300;
+    width: 100%;
+}
+
+button[disabled],
+button:disabled {
+    cursor: auto;
+}
+
+button.edit {
+    background-color: var(--yellow);
+}
+
+button.delete {
+    background-color: var(--red);
+}
+
+/* END TABLE */
+/* FOOTER */
+footer {
+    padding: 2em;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 2em;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 1em 0;
+    letter-spacing: 2px;
+}
+
+/* END FOOTER */

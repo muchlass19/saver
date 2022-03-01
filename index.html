@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ALERT -->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Berhasil</strong> menyalin data!
+    </div>
+    <!-- END ALERT -->
+    <!-- DECODE -->
+    <div class="decodeData">
+        <p>Unique ID : </p>
+        <button class="decodeText" onclick="copyText(this, true)">
+            <h3>Input your unique ID</h3>
+        </button>
+    </div>
+    <!-- END DECODE -->
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Saver App</h1>
+        <div class="encodeData">
+            <label for="encode">Your Unique ID :</label>
+            <input onkeyup="checkId(this)" type="text" name="encode" id="encode">
+        </div>
+    </div>
+    <!-- END HEADER -->
+    <hr>
+    <!-- ADD FORM -->
+    <div class="addForm">
+        <h3>Add Form</h3>
+        <div class="form">
+            <ul>
+                <li>
+                    <label for="platform">Platform</label>
+                    <input type="text" name="platform" id="platform">
+                </li>
+                <li>
+                    <label for="copy">Copy Text</label>
+                    <input type="text" name="copy" id="copy">
+                </li>
+                <li>
+                    <button type="submit" name="submit" value="submit" onclick="submit()">Submit</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END ADD FORM -->
+    <hr>
+    <!-- SEARCH -->
+    <div class="search">
+        <label for="search">Search</label>
+        <input type="text" name="search" id="search" onkeyup="search()">
+    </div>
+    <!-- END SEARCH -->
+    <!-- TABLE -->
+    <div class="table" id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Copy Text</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="loopData"></tbody>
+        </table>
+    </div>
+    <!-- END TABLE -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="brand">
+            <h1>Chlas</h1>
+            <p>Muchlas Syahlanisyiam</p>
+        </div>
+        <div class="social">
+            <a target="_blank" href="https://www.instagram.com/muchlass19/">Instagram</a>
+            <a target="_blank" href="https://web.facebook.com/muchlassyahlanisyiam/">Facebook</a>
+            <a target="_blank" href="https://twitter.com/syahlanisyiam_">Twitter</a>
+        </div>
+        <div class="copyright">
+            Copyright &#169 2022
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+</body>
+<script src="app.js"></script>
+</html>
